@@ -25,6 +25,12 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calc.divide(5, 2), 2.5)
         self.assertEqual(calc.divide(10, 2), 5.0) # 10/2 也應是 5.0
         self.assertEqual(calc.divide(7, 4), 1.75)
+    
+    # add test for divide method-zero division
+    def test_divide_by_zero(self):
+        calc = Calculator()
+        with self.assertRaises(ValueError):
+            calc.divide(10, 0)
 
 if __name__ == "__main__":
     unittest.main()
