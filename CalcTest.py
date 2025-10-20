@@ -34,4 +34,4 @@ class TestCalculator(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    print(some_undefined_variable) # 測試觸發flake8 F821 錯誤
+    
