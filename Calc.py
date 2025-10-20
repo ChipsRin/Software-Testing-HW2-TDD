@@ -9,3 +9,7 @@ class Calculator:
     # add multiply method
     def multiply(self, a, b):
         return a * b
+    
+    # add divide method
+    def divide(self, a, b):
+        return None  # to be implemented

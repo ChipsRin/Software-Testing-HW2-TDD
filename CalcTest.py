@@ -13,11 +13,18 @@ class TestCalculator(unittest.TestCase):
         result = calc.subtract(10, 5)
         self.assertEqual(result, 5)  
 
-    # add a test for multiply method
+    # add a test for multi method
     def test_multiply(self):
         calc = Calculator()
         result = calc.multiply(10, 5)
         self.assertEqual(result, 50)  
+
+    # add test for divide method-float
+    def test_divide_float(self):
+        calc = Calculator()
+        self.assertEqual(calc.divide(5, 2), 2.5)
+        self.assertEqual(calc.divide(10, 2), 5.0) # 10/2 也應是 5.0
+        self.assertEqual(calc.divide(7, 4), 1.75)
 
 if __name__ == "__main__":
     unittest.main()
