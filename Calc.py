@@ -3,4 +3,4 @@ class Calculator:
         return a + b
 
     def subtract(self, a, b):
-        return None  # To be implemented
+        return a - b
