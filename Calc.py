@@ -8,4 +8,4 @@ class Calculator:
 
     # add multiply method
     def multiply(self, a, b):
-        return None
+        return a * b
