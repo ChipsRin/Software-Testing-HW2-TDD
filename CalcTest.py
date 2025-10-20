@@ -1,5 +1,7 @@
 import unittest
+import os # test flake8
 from Calc import Calculator  # The class we are going to implement
+
 
 class TestCalculator(unittest.TestCase):
     def test_add(self):
