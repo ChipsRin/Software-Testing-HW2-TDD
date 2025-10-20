@@ -1,0 +1,26 @@
+name: Python CI
+
+# when push to main 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+    # get code
+    - uses: actions/checkout@v3
+
+    # set up python
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.12"
+
+    # execute test
+    - name: Test with unittest
+      run: |
+        python -m unittest CalcTest.py
