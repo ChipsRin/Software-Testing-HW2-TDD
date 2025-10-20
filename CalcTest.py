@@ -13,5 +13,11 @@ class TestCalculator(unittest.TestCase):
         result = calc.subtract(10, 5)
         self.assertEqual(result, 5)  
 
+    # add a test for multiply method
+    def test_multiply(self):
+        calc = Calculator()
+        result = calc.multiply(10, 5)
+        self.assertEqual(result, 50)  
+
 if __name__ == "__main__":
     unittest.main()
