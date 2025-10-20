@@ -1,5 +1,3 @@
-import os # test flake8
-
 class Calculator:
     def add(self, a, b):
         return a + b
