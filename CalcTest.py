@@ -11,7 +11,7 @@ class TestCalculator(unittest.TestCase):
     def test_subtract(self):
         calc = Calculator()
         result = calc.subtract(10, 5)
-        self.assertEqual(result, 5)  # Expect 2 + 3 = 5
+        self.assertEqual(result, 5)  
 
 if __name__ == "__main__":
     unittest.main()
