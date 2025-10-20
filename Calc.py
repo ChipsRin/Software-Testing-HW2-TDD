@@ -12,4 +12,4 @@ class Calculator:
     
     # add divide method
     def divide(self, a, b):
-        return None  # to be implemented
+        return a / b
